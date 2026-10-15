@@ -1,0 +1,29 @@
+.about { color: #422b25; background: #fbf7ef; }
+.eyebrow { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; line-height: 1.8; }
+.intro { text-align: center; padding: 75px 24px 65px; }
+.about h1, .about h2, .about h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.045em; }
+.about h1 { font-size: clamp(3.5rem, 6vw, 6.5rem); line-height: 1.05; margin: 24px 0; }
+.about em { color: #8a392d; }
+.intro > p:last-child { font-size: .94rem; line-height: 1.9; color: #766050; }
+.archive { position: relative; height: clamp(230px, 32vw, 440px); }
+.archive img { object-fit: cover; }
+.archive span { position: absolute; bottom: 20px; left: 5vw; font-size: .75rem; padding: 10px 16px; color: #fff8eb; background: #422b25; }
+.roots { max-width: 1320px; margin: auto; padding: 80px 5vw; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.about h2 { font-size: clamp(2.7rem, 4vw, 4rem); line-height: 1.1; margin: 18px 0 25px; }
+.roots > div > p:not(.eyebrow), .territoryCopy > p:not(.eyebrow) { font-size: .9rem; line-height: 1.9; color: #766050; max-width: 460px; margin-top: 18px; }
+.family { position: relative; min-height: 420px; }
+.family img { object-fit: contain; mix-blend-mode: multiply; }
+.values { padding: 65px 5vw; background: #eee3d3; text-align: center; }
+.valueGrid { max-width: 1160px; margin: 45px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px; text-align: left; }
+.valueGrid article { border-top: 1px solid #b79c82; padding-top: 24px; }
+.valueGrid span { font-size: .75rem; color: #89654e; }
+.valueGrid h3 { font-size: 2rem; margin: 15px 0; }
+.valueGrid p { font-size: .86rem; line-height: 1.9; color: #6e5b50; }
+.territory { display: grid; grid-template-columns: 1fr 1fr; max-width: 1320px; margin: 80px auto; padding: 0 5vw; gap: 65px; align-items: center; }
+.territoryImage { position: relative; min-height: 520px; }
+.territoryImage img { object-fit: cover; }
+.button { display: inline-flex; justify-content: space-between; gap: 30px; background: #713329; color: #fff5e5; padding: 17px 23px; font-size: .8rem; margin-top: 30px; }
+.button:hover { background: #4a211d; }
+.source { text-align: center; padding: 0 24px 35px; font-size: .7rem; color: #766050; }
+.source a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 760px) { .intro { padding: 50px 6vw; } .about h1 { font-size: clamp(3rem, 10vw, 4.5rem); } .roots { padding: 50px 6vw; grid-template-columns: 1fr; gap: 20px; } .family { min-height: 330px; } .values { padding: 50px 6vw; } .valueGrid { grid-template-columns: 1fr; gap: 28px; margin-top: 30px; } .territory { grid-template-columns: 1fr; padding: 0 6vw; gap: 35px; margin: 50px auto; } .territoryImage { min-height: 420px; } }

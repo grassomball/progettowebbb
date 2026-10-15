@@ -1,0 +1,61 @@
+GENERAZIONE INIZIALE (imagegen)
+
+Use case: infographic-diagram. Create one very high-resolution landscape academic navigation diagram in Italian for a university report, aspect ratio approximately 3:2, exceptionally readable text. Title "Forno DiGesù — Modello di navigazione progettuale". White background, sober flat diagram with page-shaped rectangular nodes with small folded top-right corner like the Promusic report, concise function labels inside each page, thin orthogonal directional arrows with action labels. NO screenshots, NO decorative icons, NO ER diamonds, NO data entity diagram.
+Organize in THREE separated vertical panels with very pale background, generous spacing. Panel headers "PAGINE PUBBLICHE", "AREA CLIENTE", "AREA GESTORE". Use black text, restrained blue for public nodes, green for customer, warm pale orange for manager. Draw main navigation arrows solid black, automatic redirects dashed blue. Label ALL meaningful arrows. No unlabeled hierarchy spokes from Home.
+PUBLIC panel, five page nodes:
+"HOME" / "Presentazione del forno"
+"CATALOGO" / "Elenco e ricerca prodotti"
+"DETTAGLIO PRODOTTO" / "Informazioni e recensioni" / "Aggiungi al carrello [cliente]" / "Scrivi recensione [acquisto verificato]"
+"REGISTRAZIONE" / "Modulo creazione account"
+"LOGIN" / "Modulo di accesso"
+Within public panel connections:
+HOME -> CATALOGO labelled "Apri catalogo";
+CATALOGO -> DETTAGLIO PRODOTTO labelled "Seleziona prodotto";
+REGISTRAZIONE -> LOGIN dashed labelled "Registrazione riuscita".
+CUSTOMER panel, five page nodes:
+"AREA PERSONALE" / "Profilo e accesso alle funzioni"
+"CARRELLO" / "Modifica quantità e rimuovi articoli" / "Riepilogo e conferma acquisto"
+"I MIEI ORDINI" / "Storico degli ordini"
+"DETTAGLIO ORDINE" / "Articoli, importi e stato"
+"I MIEI TICKET" / "Elenco e apertura ticket" / "Dettaglio e risposte in finestra"
+Customer connections:
+AREA PERSONALE -> CARRELLO label "Apri carrello";
+AREA PERSONALE -> I MIEI ORDINI label "Consulta storico";
+I MIEI ORDINI -> DETTAGLIO ORDINE label "Seleziona ordine";
+CARRELLO -> DETTAGLIO ORDINE dashed label "Acquisto confermato";
+AREA PERSONALE -> I MIEI TICKET label "Apri assistenza".
+MANAGER panel, seven page nodes:
+"AREA GESTORE" / "Accesso alle funzioni amministrative"
+"GESTIONE CATALOGO" / "Elenco e selezione prodotti"
+"AGGIUNGI / MODIFICA PRODOTTO" / "Modulo dati, prezzo e disponibilità"
+"GESTIONE ORDINI" / "Elenco degli ordini"
+"DETTAGLIO ORDINE GESTORE" / "Dati dell’ordine e aggiornamento stato"
+"GESTIONE TICKET" / "Elenco, dettaglio e risposta in finestra"
+"CLIENTI" / "Consultazione dati dei clienti"
+Manager connections:
+AREA GESTORE -> GESTIONE CATALOGO label "Apri catalogo";
+GESTIONE CATALOGO -> AGGIUNGI / MODIFICA PRODOTTO label "Nuovo / modifica";
+AGGIUNGI / MODIFICA PRODOTTO -> GESTIONE CATALOGO dashed label "Salvataggio riuscito";
+AREA GESTORE -> GESTIONE ORDINI label "Consulta ordini";
+GESTIONE ORDINI -> DETTAGLIO ORDINE GESTORE label "Seleziona ordine";
+AREA GESTORE -> GESTIONE TICKET label "Apri assistenza";
+AREA GESTORE -> CLIENTI label "Consulta clienti".
+Cross-panel essential arrows:
+LOGIN -> AREA PERSONALE dashed label "Login valido [cliente]";
+LOGIN -> AREA GESTORE dashed label "Login valido [gestore]";
+DETTAGLIO PRODOTTO -> CARRELLO solid label "Apri carrello [cliente]".
+Place a prominent shared navigation strip across the top BELOW the title and ABOVE panels with exact text:
+"Barra comune in tutte le pagine: Home • Catalogo • Registrazione e Login [visitatore] • Area personale e Carrello [cliente] • Area gestore [gestore] • Esci [autenticato]"
+This strip explicitly expresses global navigation, so do not draw numerous back arrows to Home.
+Bottom legend in a wide clean block, must be fully visible and readable, exact text:
+"Linea continua = collegamento o azione; linea tratteggiata = reindirizzamento; [ ] = condizione di accesso."
+"Pagina riservata senza sessione valida → Login. Ruolo non autorizzato → accesso negato."
+"Credenziali errate → permanenza nel Login con errore. Registrazione non valida → permanenza nel modulo."
+"Esci, da qualsiasi pagina autenticata → Login; la sessione viene terminata."
+"Aggiunta al carrello: richiede il ruolo cliente. Recensione: cliente con acquisto verificato."
+"Modello della versione finale. Già presenti nella v0.1: Home, Registrazione, Login e Area privata; ruoli ed e-commerce sono progettuali."
+Ensure all 17 page nodes and all specified links are legible; no invented routes, payments, wishlist, returns, master administrator, or public list of users. This is a conceptual navigation model derived from bakery requirements, not a claim of implemented e-commerce. Use thoughtful spacing and clean professional typography.
+
+CORREZIONE (imagegen)
+
+Edit this academic navigation diagram. Preserve ALL page nodes, every word, layout, colors, other arrows, title, legend and typography exactly. Correct ONE navigation arrow only: the blue dashed arrow labeled "Login valido [gestore]" currently starts at LOGIN then crosses along bottom and incorrectly terminates at the bottom of DETTAGLIO ORDINE GESTORE. Remove its final upward arrowhead and the segment entering DETTAGLIO ORDINE GESTORE. Route this same blue dashed arrow, starting from LOGIN and preserving the bottom horizontal segment and its existing label, to AREA GESTORE instead. Use the rightmost margin inside or alongside the orange panel: continue bottom horizontal dashed line to near far-right border, turn upward along far-right margin, then turn left toward right side of AREA GESTORE and end with left-pointing blue arrowhead touching AREA GESTORE. Leave space from CLIENTI node so line never intersects CLIENTI or other page nodes. No arrow from LOGIN may terminate on an order detail page. The ONLY final destination of "Login valido [gestore]" is AREA GESTORE at top of orange panel. Do not change anything else.

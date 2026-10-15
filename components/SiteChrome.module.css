@@ -1,0 +1,25 @@
+.header { background: #fbf7ef; color: #422b25; }
+.announcement { background: #713329; color: #fff4e3; text-align: center; padding: 9px 16px; font-size: .66rem; letter-spacing: .075em; }
+.nav { border-bottom: 1px solid #ded2c0; }
+.navInner { max-width: 1440px; padding: 23px 5vw; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.brand { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; color: #713329; }
+.brandTop { font-size: .53rem; font-weight: 600; letter-spacing: .35em; }
+.brandName { font-family: Georgia, serif; font-size: 2.4rem; line-height: 1.12; font-weight: 600; letter-spacing: -.08em; }
+.brandDot { color: #b8874c; }
+.brandBottom { font-size: .46rem; letter-spacing: .22em; margin-top: 6px; }
+.primaryLinks, .accountLinks { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
+.accountLinks { justify-content: flex-end; gap: 15px; }
+.navLink { font-size: .77rem; padding: 8px 0; text-decoration-thickness: 1px; text-underline-offset: 6px; }
+.navLink:hover { color: #8a392d; text-decoration: underline; }
+.accountButton { display: inline-block; border: 1px solid #713329; padding: 10px 16px; color: #713329; font-size: .73rem; cursor: pointer; }
+.accountButton:hover { background: #eee3d3; }
+.footer { background: #352720; color: #f6ead9; padding: 65px 5vw 25px; }
+.footerInner { max-width: 1200px; margin: auto; display: grid; grid-template-columns: 1.7fr 1fr 1fr; gap: 50px; }
+.footerTitle { font-family: Georgia, serif; font-size: 2.4rem; line-height: 1.2; margin-bottom: 20px; }
+.footerText { max-width: 300px; font-size: .8rem; line-height: 1.9; color: #d0bda8; }
+.footer h2 { font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 22px; }
+.footer ul { display: flex; flex-direction: column; gap: 13px; font-size: .78rem; color: #e5d5c3; }
+.footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.footerBottom { max-width: 1200px; margin: 45px auto 0; border-top: 1px solid #675246; padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: .65rem; color: #c9b59e; }
+@media (max-width: 1050px) { .navInner { flex-wrap: wrap; gap: 18px; } .primaryLinks { gap: 18px; } .accountLinks { flex: 1; } }
+@media (max-width: 640px) { .navInner { padding: 19px 6vw; gap: 18px; } .brandName { font-size: 2.1rem; } .primaryLinks { order: 3; flex-basis: 100%; justify-content: center; border-top: 1px solid #e5dacb; padding-top: 12px; gap: 28px; } .accountLinks { gap: 10px; max-width: 65%; } .navLink { font-size: .72rem; } .accountButton { padding: 8px 10px; font-size: .7rem; } .announcement { font-size: .58rem; } .footer { padding: 45px 6vw 25px; } .footerInner { grid-template-columns: 1fr 1fr; gap: 36px 20px; } .footerIntro { grid-column: 1 / -1; } }
